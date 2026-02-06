@@ -22,7 +22,7 @@ export const SearchInput = ({ placeholder = "Pesquisar filmes..." }: SearchInput
           dispatch(clearSearch());
         }
       }
-    }, 500);
+    }, 1500);
 
     return () => clearTimeout(timeoutId);
   }, [localQuery, query, dispatch]);
